@@ -15,7 +15,7 @@ class PigLatinizer
   
   
   def starts_with_a_vowel?
-    word.scan(/^[aeiou]/i).size > 0
+    @word.scan(/^[aeiou]/i).size > 0
   end
   
 end
@@ -24,8 +24,3 @@ end
 #word.chars.rotate.join + "ay"
 #words.chars.rotate
 
-word = "noodle"
-word = "oodlenay"
-
-word "flatiron"
-word = "latironfay"
