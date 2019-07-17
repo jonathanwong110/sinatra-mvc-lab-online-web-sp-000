@@ -12,7 +12,11 @@ class PigLatinizer
   
   
   def piglatinize(word)
-    return word if 
+    if word.include?(" ") 
+      piglatinize_sentence(sentence)
+    else
+      piglatinize_word(word)
+    end
   end
 
   def piglatinize_sentence(sentence)
