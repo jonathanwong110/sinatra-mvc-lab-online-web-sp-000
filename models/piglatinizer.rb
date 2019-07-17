@@ -1,6 +1,6 @@
 class PigLatinizer
   
-  def piglatinize(word)
+  def piglatinize_word(word)
     @word = word
     if starts_with_a_vowel? == false
       @word = @word.chars.rotate.join until starts_with_a_vowel? == true
@@ -9,8 +9,12 @@ class PigLatinizer
       word + "way"
     end
   end
+  
+  
+  def piglatinize(word)
+  end
 
-  def to_pig_latin(sentence)
+  def piglatinize_sentence(sentence)
     word = sentence.split(" ")
     word.map { |words| piglatinize(words) }
     word.join(" ")
