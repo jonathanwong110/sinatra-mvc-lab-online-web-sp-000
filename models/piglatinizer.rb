@@ -12,6 +12,7 @@ class PigLatinizer
   
   
   def piglatinize(word)
+    return word if 
   end
 
   def piglatinize_sentence(sentence)
