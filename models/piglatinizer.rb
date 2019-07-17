@@ -3,7 +3,7 @@ class PigLatinizer
   def piglatinize(word)
     @word = word
     if starts_with_a_vowel? == false
-      @word.chars.rotate until starts_with_a_vowel? == true
+      @word = @word.chars.rotate until starts_with_a_vowel? == true
     else
       word + "way"
     end
