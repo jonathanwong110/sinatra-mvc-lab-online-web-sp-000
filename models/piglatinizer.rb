@@ -23,3 +23,9 @@ end
 
 #word.chars.rotate.join + "ay"
 #words.chars.rotate
+
+word = "noodle"
+word = "oodlenay"
+
+word "flatiron"
+word = "latironfay"
