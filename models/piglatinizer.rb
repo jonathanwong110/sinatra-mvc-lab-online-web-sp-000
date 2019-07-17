@@ -4,7 +4,7 @@ class PigLatinizer
     @word = word
     if starts_with_a_vowel? == false
       @word = @word.chars.rotate.join until starts_with_a_vowel? == true
-      @word
+      @word + "ay"
     else
       word + "way"
     end
