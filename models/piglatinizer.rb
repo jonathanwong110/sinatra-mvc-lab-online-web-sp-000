@@ -21,7 +21,7 @@ class PigLatinizer
 
   def piglatinize_sentence(sentence)
     word = sentence.split(" ")
-    word.map { |words| pig_latinize(words) }
+    word.map { |words| piglatinize_word(words) }
     word.join(" ")
   end
   
